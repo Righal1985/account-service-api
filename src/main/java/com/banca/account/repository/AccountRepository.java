@@ -1,0 +1,10 @@
+package com.banca.account.repository;
+
+import com.banca.account.model.Account;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface AccountRepository extends JpaRepository<Account, String> {
+    // JpaRepository ya trae métodos como save(), findById(), etc.
+}
