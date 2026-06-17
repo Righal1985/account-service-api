@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AccountRepository extends JpaRepository<Account, String> {
-    // JpaRepository ya trae métodos como save(), findById(), etc.
+
 }

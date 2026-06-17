@@ -8,14 +8,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 
-@Entity // 👈 Hibernate sabe que esto es una tabla
-@Table(name = "accounts") // Nombre de la tabla en DBeaver
+@Entity
+@Table(name = "accounts")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Account {
 
-    @Id // 👈 Define el identificador único (Primary Key)
+    @Id
     private String accountNumber;
 
     private String ownerName;
